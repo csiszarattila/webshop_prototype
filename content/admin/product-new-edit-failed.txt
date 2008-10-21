@@ -1,0 +1,81 @@
+---
+title:      Product-New-Edit-Failed
+created_at: 2008-10-14 14:23:07.609737 +02:00
+layout: admin
+filter:
+  - erb
+  - haml
+---
+%h2 Termék szerkesztése
+%form{ :action => "product-new-edit-failed.html" }
+  #errorExplanation
+    %h2 2 hiba akadályozza a(z) termék mentését
+    %p A következő mezőkkel vannak problémák:
+    %ul
+      %li Név mező nem lehet üres
+      %li Ár mező nem lehet 5 Ft alatti
+  
+  %fieldset
+    .fieldWithErrors
+      %label{ :for => "name"} Név
+    %br
+    .fieldWithErrors
+      %input{ :type => "text", :value => "Why's (poignant) guide to Ruby" }
+    %br
+    .input
+      %label{ :for => "category" } Kategória
+      %select{ :name => "category" }
+        %option Könyvek
+        %option -Albumok
+        %option -Gasztronómia
+        %option -Ismeretterjesztő könyvek
+        %option -Idegennyelvű könyvek
+        %option --Angol
+        %option --Német
+        %option --Orosz
+        %option -Regények
+        %option -Sport
+        %option{ :selected => "selected" } -Számítástechnika
+        %option -Történelem
+        %option Zenék
+        %option Filmek
+        %option -Akció
+        %option -Dráma
+        %option -Vígjáték
+        %option -Sport
+        %option Szórakoztató-elektronika
+        %option Játék
+        %option Ajándéktárgyak
+        %option Ruhák
+        %option Szoftver-hardver
+    .input.fieldWithErrors
+      %label{ :for => "price" } Ár 
+    %br
+    .fieldWithErrors
+      %input{ :type => "text", :value => "5666" } Ft
+    .input
+      %label{ :for => "description" } Leírás
+      %textarea{ :cols => "60", :rows => "20"} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  %fieldset
+    %legend Termék jellemzők
+    .input
+      %label{ :for => "szerzo" } Szerző 
+      %input{ :type => "text", :value => "Why"}
+    .input
+      %label{ :for => "szerzo" } Kiadási év 
+      %input{ :type => "text", :value => "2007" }
+    .input
+      %label{ :for => "szerzo" } ISBN-szám
+      %input{ :type => "text", :value => "122345-123456789" } 
+  %fieldset
+    %legend Kapcsolódó képek
+    .picture
+      %img{ :src => "/images/book_why.jpg" }
+      %a Törlés
+    .picture
+      %img{ :src => "/images/book_rails.jpg" }
+      %a Törlés
+    .picture
+      %img{ :src => "/images/vs.jpg" }
+      %a Törlés
+  %input{ :type => "submit", :value => "Mentés"}

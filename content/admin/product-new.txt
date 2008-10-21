@@ -1,0 +1,60 @@
+---
+title:      Új termék hozzáadása
+created_at: 2008-10-14 13:34:25.723611 +02:00
+layout: admin
+filter:
+  - erb
+  - haml
+---
+%h2 Új termék hozzáadása
+%form{ :action => "product-new-edit-failed.html" }
+  %fieldset
+    .input
+      %label{ :for => "name"} Név
+      %input{ :type => "text" }
+    .input
+      %label{ :for => "category" } Kategória
+      %select{ :name => "category" }
+        %option Könyvek
+        %option -Albumok
+        %option -Gasztronómia
+        %option -Ismeretterjesztő könyvek
+        %option -Idegennyelvű könyvek
+        %option --Angol
+        %option --Német
+        %option --Orosz
+        %option -Regények
+        %option -Sport
+        %option -Számítástechnika
+        %option -Történelem
+        %option Zenék
+        %option Filmek
+        %option -Akció
+        %option -Dráma
+        %option -Vígjáték
+        %option -Sport
+        %option Szórakoztató-elektronika
+        %option Játék
+        %option Ajándéktárgyak
+        %option Ruhák
+        %option Szoftver-hardver
+    .input
+      %label{ :for => "price" } Ár 
+      %input{ :type => "text" }
+    .input
+      %label{ :for => "description" } Leírás
+      %textarea{ :cols => "60", :rows => "20" }
+  %fieldset
+    %legend Termék jellemzők
+    .input
+      %label{ :for => "szerzo" } Szerző 
+      %input{ :type => "text" }
+    .input
+      %label{ :for => "szerzo" } Kiadási év 
+      %input{ :type => "text" }
+    .input
+      %label{ :for => "szerzo" } ISBN-szám
+      %input{ :type => "text" }
+  %fieldset
+    %legend Kapcsolódó képek
+  %input{ :type => "submit", :value => "Mentés"}

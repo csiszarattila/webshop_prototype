@@ -1,0 +1,105 @@
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Termék szerkesztése</title>
+   <meta name="author" content="" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+<div id="head">
+  <h1> Adminisztráció</h1>
+  <ul>
+    <li><a href="orders.html">Rendelések</a></li>
+    <li><a href="categories.html">Termék kategóriák</a></li>
+    <li><a href="products.html">Termékek</a></li>
+    <li>Felhasználók</li>
+  </ul>
+</div>
+<div id="content">
+  <h2>Termék szerkesztése</h2>
+<form action='product-new-edit-failed.html' id='product'>
+  <div id='left-column'>
+    <fieldset>
+      <legend>Általános jellemzők</legend>
+      <div class='input'>
+        <label for='name'>Név</label>
+        <input type='text' value="Why's (poignant) guide to Ruby" />
+      </div>
+      <div class='input'>
+        <label for='category'>Kategória</label>
+        <select name='category'>
+          <option>Könyvek</option>
+          <option>-Albumok</option>
+          <option>-Gasztronómia</option>
+          <option>-Ismeretterjesztő könyvek</option>
+          <option>-Idegennyelvű könyvek</option>
+          <option>--Angol</option>
+          <option>--Német</option>
+          <option>--Orosz</option>
+          <option>-Regények</option>
+          <option>-Sport</option>
+          <option selected='selected'>-Számítástechnika</option>
+          <option>-Történelem</option>
+          <option>Zenék</option>
+          <option>Filmek</option>
+          <option>-Akció</option>
+          <option>-Dráma</option>
+          <option>-Vígjáték</option>
+          <option>-Sport</option>
+          <option>Szórakoztató-elektronika</option>
+          <option>Játék</option>
+          <option>Ajándéktárgyak</option>
+          <option>Ruhák</option>
+          <option>Szoftver-hardver</option>
+        </select>
+      </div>
+      <div class='input'>
+        <label for='price'>Ár</label>
+        <input type='text' value='5666'>Ft</input>
+      </div>
+      <div class='input'>
+        <label for='description'>Leírás</label>
+        <textarea cols='60' rows='20'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Termék jellemzők</legend>
+      <div class='input'>
+        <label for='szerzo'>Szerző</label>
+        <input type='text' value='Why' />
+      </div>
+      <div class='input'>
+        <label for='szerzo'>Kiadási év</label>
+        <input type='text' value='2007' />
+      </div>
+      <div class='input'>
+        <label for='szerzo'>ISBN-szám</label>
+        <input type='text' value='122345-123456789' />
+      </div>
+    </fieldset>
+  </div>
+  <div id='right-column'>
+    <fieldset id='pictures'>
+      <legend>Kapcsolódó képek</legend>
+      <div class='picture'>
+        <img height='150' src='/images/book_why.jpg' width='150' />
+        <a>Törlés</a>
+      </div>
+      <div class='picture'>
+        <img height='150' src='/images/book_rails.jpg' width='150' />
+        <a>Törlés</a>
+      </div>
+      <div class='picture'>
+        <img height='150' src='/images/vs.jpg' width='150' />
+        <a>Törlés</a>
+      </div>
+    </fieldset>
+  </div>
+  <div id='submit'>
+    <input type='submit' value='Mentés' />
+  </div>
+</form>
+
+</div>

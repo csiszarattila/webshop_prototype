@@ -1,0 +1,61 @@
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Orders</title>
+   <meta name="author" content="" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+<div id="head">
+  <h1> Adminisztráció</h1>
+  <ul>
+    <li><a href="orders.html">Rendelések</a></li>
+    <li><a href="categories.html">Termék kategóriák</a></li>
+    <li><a href="products.html">Termékek</a></li>
+    <li>Felhasználók</li>
+  </ul>
+</div>
+<div id="content">
+  <h2>Megrendelések</h2>
+<form class='sort'>
+  <label for='m'>Szűrés:</label>
+  <select name='m'>
+    <option value='uj'>Újak</option>
+    <option value='fuggo'>Függőben lévők</option>
+    <option value='teljesitett'>Teljesítettek</option>
+  </select>
+  <input type='submit' value='mutasd' />
+</form>
+<table class='orders list'>
+  <tr>
+    <th>Dátum</th>
+    <th>Tételek</th>
+    <th>Összérték</th>
+    <th>Mutasd</th>
+  </tr>
+  <tr class='tarka'>
+    <td>2008.10.12</td>
+    <td>
+      <p>1x Miss Marple At Bertrams hotel</p>
+      <p>2x Whys poignant guide to Ruby</p>
+    </td>
+    <td>10.545 Ft</td>
+    <td>
+      <a href='order-details.html'>Részletesen</a>
+    </td>
+  </tr>
+  <tr class='barka'>
+    <td>2008.10.13</td>
+    <td>
+      <p>1x Sony Bravo 60" LCD TV</p>
+    </td>
+    <td>69.999 Ft</td>
+    <td>
+      <a href='order-details.html'>Részletesen</a>
+    </td>
+  </tr>
+</table>
+
+</div>

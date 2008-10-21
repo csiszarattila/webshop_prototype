@@ -1,0 +1,112 @@
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>2/3 Rendelési adatok - Hibás adatok</title>
+   <meta name="author" content="" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="css/site.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div id="head">
+    <h1><a href="index.html">Webshop</a></h1>
+    <ul>
+      <li class="user"><a href="login-or-registration.html">Bejelentkezés vagy regisztráció</a></li>
+      <li class="info"><a href="">Vásárlási információk</a></li>
+      <li class="about"><a href="">A boltról</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="search">
+      <h2>Keresés</h2>
+      <form action="search.html">
+        <input type="text" />
+        <input type="submit" value="Keresés" />
+      </form>
+    </div>
+    <div id="leftcolumn">
+    
+    
+      <h2>Kategóriák</h2>
+      <ul id="cat-list">
+        <li 
+>
+        <a href="product-category.html">Könyvek</a>
+        </li>
+        <li><a href="product-category.html">Zenék</a></li>
+        <li><a href="product-category.html">Filmek</a></li>
+        <li><a href="product-category.html">Szórakoztató-elektronika</a></li>
+        <li><a href="product-category.html">Játék</a></li>
+        <li><a href="product-category.html">Ajándéktárgyak</a></li>
+        <li><a href="product-category.html">Ruhák</a></li>
+        <li><a href="product-category.html">Szoftver-hardver</a></li>
+      </ul>
+    </div>
+    <div id="middlecolumn">
+      <div class='order-step-info'>
+  <h2>2 / 3 lépés : Rendelési adatok és cím megadása | Hibás adatok</h2>
+</div>
+<form action='order-review.html' id='order-address'>
+  <div class='error-messages'>
+    <h4>Az adataid mentése a következő oko miatt nem sikerült</h4>
+    <p>Ilyen nevű település nem létezik</p>
+    <p>Hibás irányítószám</p>
+    <p>Nem választottál szállítási módot</p>
+  </div>
+  <fieldset>
+    <legend>Személyi adatok</legend>
+    <div class='input'>
+      <label for='name'>Név</label>
+      <br />
+      <input name='name' type='text' value='Csiszár Attila' />
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Cím adatok</legend>
+    <div class='input field-with-error'>
+      <label for='city'>Település</label>
+      <br />
+      <input name='city' type='text' value='Törökszentmiklós' />
+    </div>
+    <div class='input field-with-error'>
+      <label for='zip'>Irányítószám</label>
+      <br />
+      <input name='zip' size='4' type='text' value='5200' />
+    </div>
+    <div class='input'>
+      <label for='street'>Utca, házszám</label>
+      <br />
+      <input name='street' type='text' value='Batthyány út 99. 1lh. 4/13' />
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend class='as-label as-label-with-error'>Fizetési és szállítási mód</legend>
+    <div class='radio-group radio-group-with-error'>
+      <input name='payment' type='radio' value='a' />
+      <label for='a'>Banki átutalással fizetek és futár kiszálítást kérek</label>
+      <br />
+      <input name='payment' type='radio' value='b' />
+      <label for='b'>A boltban veszem át és készpénzzel vagy kártyával fizetek</label>
+      <br />
+      <input name='payment' type='radio' value='c' />
+      <label for='c'>A boltban veszem át, de banki átutalással egyenlítem az összeget</label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Speciális kérések</legend>
+    <div class='input'>
+      <label for='note'>Megjegyzések (pl. kiszállítási időpont)</label>
+      <br />
+      <textarea cols='40' name='note' rows='10'></textarea>
+    </div>
+  </fieldset>
+  <div class='submit'>
+    <input type='submit' value='Mentés és folytatás' />
+  </div>
+</form>
+
+    </div>
+  </div>
+</body>
+</html>

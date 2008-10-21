@@ -1,0 +1,43 @@
+---
+title:      Orders
+created_at: 2008-10-13 11:32:49.120928 +02:00
+layout: admin
+filter:
+  - erb
+  - haml
+---
+
+%h2 Megrendelések
+
+%form.sort
+  %label{:for=>"m"}Szűrés:
+  %select{:name=>"m"}
+    %option{:value=>"uj"} Újak
+    %option{:value=>"fuggo"} Függőben lévők
+    %option{:value=>"teljesitett"} Teljesítettek
+  %input{:type=>"submit",:value=>"mutasd"}
+
+%table{:class=>"orders list"}
+  %tr
+    %th Dátum
+    %th Tételek
+    %th Összérték
+    %th Mutasd
+    
+  %tr.tarka
+    %td 2008.10.12
+    %td 
+      %p 1x Miss Marple At Bertrams hotel
+      %p 2x Whys poignant guide to Ruby
+    %td 10.545 Ft
+    %td 
+      %a{:href=>"order-details.html"} Részletesen
+  
+  %tr.barka
+    %td 2008.10.13
+    %td 
+      %p 1x Sony Bravo 60" LCD TV
+    %td 69.999 Ft
+    %td 
+      %a{:href=>"order-details.html"} Részletesen
+    

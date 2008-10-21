@@ -1,0 +1,13 @@
+---
+title:      Order-Accepted
+created_at: 2008-10-19 14:32:03.873174 +02:00
+filter:
+  - erb
+  - haml
+---
+
+.order-accept
+  %h3 Kedves Csiszár Attila!
+  %p Rendelésed rögzítettük, amelyről hamarosan e-mail-ben is értesítést kapsz. Eladóink ezt követően felveszik veled a kapcsolatot, hogy adataid egyeztessék, valamint megbizonyosodjanak a rendelés hitelességéről.
+
+  %p Köszönjük, hogy nálunk vásároltál és további kellemes böngészést!

@@ -1,0 +1,118 @@
+---
+extension: html
+filter:    
+  - erb
+---
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title><%= @page.title %></title>
+   <meta name="author" content="<%= @page.author %>" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="css/site.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div id="head">
+    <h1><a href="index.html">Webshop</a></h1>
+    <ul>
+      <li class="user"><a href="login-or-registration.html">Bejelentkezés vagy regisztráció</a></li>
+      <li class="info"><a href="">Vásárlási információk</a></li>
+      <li class="about"><a href="">A boltról</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="search">
+      <h2>Keresés</h2>
+      <form action="search.html">
+        <input type="text" />
+        <input type="submit" value="Keresés" />
+      </form>
+    </div>
+    <div id="leftcolumn">
+    
+    <%- if @page.name == "index-with-cart" %>
+      <h2>A kosarad tartalma</h2>
+      <div id="cartbox">
+        <table id="index-cart">
+          <tr>
+            <td class='img'>
+              <img height='50' src='images/marple_book.jpg' width='50' />
+            </td>
+            <td class="quantity">
+              1
+            </td>
+            <td class='price'>
+              1,245
+              <span class='currency'>Ft</span>
+            </td>
+          </tr>
+          <tr class='title'>
+            <td colspan="3">Miss Marple At Bertrams Hotel</td>
+          </tr>
+          <tr>
+            <td class='img'>
+              <img height='50' src='images/keane.jpg' width='50' />
+            </td>
+            <td class="quantity">
+              2
+            </td>
+            <td class='price'>
+              10,665
+              <span class='currency'>Ft</span>
+            </td>
+          </tr>
+          <tr class='title'>
+            <td colspan="3">Keane - Under the Iron Sea CD</td>
+          </tr>
+          <tr class='sum'>
+            <td colspan='2'>Összesen</td>
+            <td class='price price-sum'>
+              11,910
+              <span class='currency'>Ft</span>
+            </td>
+          </tr>
+        </table>
+        <div class='cart-commands'>
+          <a href='show-cart.html'>Mutasd a kosaram</a><br/>
+          <a href='login-or-registration.html'>Tovább a rendeléshez</a>
+        </div>
+      </div>
+      <% end -%>
+    
+      <h2>Kategóriák</h2>
+      <ul id="cat-list">
+        <li 
+        <%- if @page.name == "product-category" || @page.name == "product-details" %>
+          class="current"
+        <% end %>>
+        <a href="product-category.html">Könyvek</a>
+        <%- if @page.name == "product-category" || @page.name == "product-details" %>
+          <ul>
+            <li><a href="product-category.html">Albumok</a></li>
+            <li><a href="product-category.html">Gasztronómia</a></li>
+            <li><a href="product-category.html">Ismeretterjesztő könyvek</a></li>
+            <li><a href="product-category.html">Idegennyelvű könyvek</a></li>
+            <li><a href="product-category.html">Regények</a></li>
+            <li><a href="product-category.html">Sport</a></li>
+            <li><a href="product-category.html">Számítástechnika</a></li>
+            <li><a href="product-category.html">Történelem</a></li>
+          </ul>
+        <% end -%>
+        </li>
+        <li><a href="product-category.html">Zenék</a></li>
+        <li><a href="product-category.html">Filmek</a></li>
+        <li><a href="product-category.html">Szórakoztató-elektronika</a></li>
+        <li><a href="product-category.html">Játék</a></li>
+        <li><a href="product-category.html">Ajándéktárgyak</a></li>
+        <li><a href="product-category.html">Ruhák</a></li>
+        <li><a href="product-category.html">Szoftver-hardver</a></li>
+      </ul>
+    </div>
+    <div id="middlecolumn">
+      <%= @content %>
+    </div>
+  </div>
+</body>
+</html>

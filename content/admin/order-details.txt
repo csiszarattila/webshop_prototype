@@ -1,0 +1,70 @@
+---
+title:      Order-Details
+created_at: 2008-10-13 15:20:20.385090 +02:00
+layout: admin
+filter:
+  - erb
+  - haml
+---
+%h2 Megrendelések - #212245 számú rendelés
+
+.order
+  %form
+    %label{:for=>"m"}A rendelés státusza: 
+    %select{:name=>"m"}
+      %option{:value=>"uj"} Új
+      %option{:value=>"fuggo"} Függő
+      %option{:value=>"teljesitve"} Teljesítve
+    %input{:type=>"submit", :value=>"Jelöld"}
+  %h3 A vevő adatai
+  .buyers
+  %table
+    %tr
+      %th Név
+      %td Csiszár Attila
+    %tr
+      %th Irányítószám 
+      %td 5200
+    %tr 
+      %th Lakhely
+      %td Törökszentmiklós
+    %tr
+      %th Utca, házszám
+      %td Batthyány út 99.
+    %tr
+      %th E-mail
+      %td csiszar.ati@gmail.com
+  %h3 Rendelési tételek
+  %table
+    %tr
+      %th Név
+      %th Darabszám
+      %th Érték
+    %tr 
+      %td Miss Marple At Bertrams hotel
+      %td 1
+      %td 1 x 1024 Ft
+    %tr
+      %td Whys poignant guide to Ruby
+      %td 2
+      %td 2 x 2546 Ft
+    %tr.summary 
+      %th{:colspan=>"2"} Összesen 
+      %td 10.545 Ft
+    %tr
+      %th{:colspan=>"2"} Fizetési mód
+      %td Készpénz
+  %h3 A vevő megjegyzései
+  %p Napközben elérhető vagyok 8-12h-ig.
+  
+  %h3 Saját megjegyzések
+  %form
+    %textarea{ :cols=>"100", :rows=>"10"}
+    %br
+    %input{:type=>"submit",:value=>"mentés"}
+.navigation
+  %a.first{:href=>""} Első
+  %a{:href=>""} 1
+  %a{:href=>""} 2
+  %span.current 3
+  %a.last{:href=>""} Utolsó

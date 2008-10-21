@@ -1,0 +1,11 @@
+
+task :default => :build
+
+desc 'deploy the site to the webserver'
+task :deploy => [:build, 'deploy:ssh']
+
+SITE.user = 'csiszar'
+SITE.host = 'csiszarattila.com'
+SITE.remote_dir = '~/szakdolgozat/webshop_proto'
+
+# EOF

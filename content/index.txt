@@ -1,0 +1,77 @@
+---
+title:  Nyito oldal
+created_at:  2008-08-02 14:06:40.000000 -06:00
+filter:
+  - erb
+  - haml
+---
+
+%h2 Kiemelt ajánlataink
+.products
+  .product
+    %h3 Miss Marple At Bertram's Hotel
+    %img{:src=>"images/marple_book.jpg", :height=>"150", :width => "150"}
+    .details
+      %p.price
+        1,245
+        %span.currency Ft
+    .commands
+      %a{ :href=>"product-details.html"} Megnézem
+      %a{ :href=>"show-cart.html" } Kosárba vele!
+      
+  .product
+    %h3 Sony Bravo 60" LCD-TV
+    %img{:src=>"images/sony_tv.jpg", :height=>"150", :width => "150"}
+    .details
+      %p.price
+        129,990 
+        %span.currency Ft
+    .commands
+      %a{ :href=>"product-details.html"} Megnézem
+      %a{ :href=>"show-cart.html" } Kosárba vele!
+      
+  .product
+    %h3 Band Of Brothers DVD
+    %img{:src=>"images/bob.jpg", :height=>"150", :width => "150"}
+    .details
+      %p.price 
+        12,450 
+        %span.currency Ft
+    .commands
+      %a{ :href=>"product-details.html"} Megnézem
+      %a{ :href=>"show-cart.html" } Kosárba vele!
+
+%h2 Legnépszerűbb termékek
+.products
+  .product
+    %h3 Lego készlet
+    %img{:src=>"images/lego.jpg", :height=>"150", :width => "150"}
+    .details
+      %p.price
+        5,234
+        %span.currency Ft
+    .commands
+      %a{ :href=>"product-details.html"} Megnézem
+      %a{ :href=>"show-cart.html" } Kosárba vele!
+      
+  .product
+    %h3 Keane - Under The Iron Sea CD
+    %img{:src=>"images/keane.jpg", :height=>"150", :width => "150"}
+    .details
+      %p.price 
+        6,888 
+        %span.currency Ft
+    .commands
+      %a{ :href=>"product-details.html"} Megnézem
+      %a{ :href=>"show-cart.html" } Kosárba vele!
+      
+  .product
+    %h3 Viewsonic 17" VP730
+    %img{:src=>"images/vs.jpg", :height=>"150", :width => "150"}
+    .details
+      %p.price
+        99,554
+        %span.currency Ft
+    .commands
+      %a{ :href=>"product-details.html"} Megnézem
+      %a{ :href=>"show-cart.html" } Kosárba vele!

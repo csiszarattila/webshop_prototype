@@ -1,0 +1,55 @@
+---
+title:       2/3 Rendelési adatok - Hibás adatok
+created_at: 2008-10-12 11:20:32.630381 +02:00
+filter:
+  - erb
+  - haml
+---
+.order-step-info
+  %h2 2 / 3 lépés : Rendelési adatok és cím megadása | Hibás adatok
+  
+%form#order-address{ :action => "order-review.html" }
+  .error-messages
+    %h4 Az adataid mentése a következő oko miatt nem sikerült
+    %p Ilyen nevű település nem létezik
+    %p Hibás irányítószám
+    %p Nem választottál szállítási módot
+  %fieldset
+    %legend Személyi adatok
+    .input
+      %label{ :for => "name"} Név
+      %br
+      %input{ :type => "text", :name=>"name", :value=>"Csiszár Attila"}
+  %fieldset
+    %legend Cím adatok
+    .input.field-with-error
+      %label{ :for => "city"} Település
+      %br
+      %input{ :type => "text", :name=>"city", :value=>"Törökszentmiklós" }
+    .input.field-with-error
+      %label{ :for => "zip"} Irányítószám
+      %br
+      %input{ :type => "text", :name=>"zip", :value=>"5200", :size=>"4" }
+    .input
+      %label{ :for => "street"} Utca, házszám
+      %br
+      %input{ :type => "text", :name=>"street", :value=>"Batthyány út 99. 1lh. 4/13" }
+  %fieldset
+    %legend.as-label.as-label-with-error Fizetési és szállítási mód
+    .radio-group.radio-group-with-error
+      %input{ :type => "radio", :name=>"payment", :value => "a" }
+      %label{ :for => "a" } Banki átutalással fizetek és futár kiszálítást kérek
+      %br
+      %input{ :type => "radio", :name=>"payment", :value => "b" }
+      %label{ :for => "b" } A boltban veszem át és készpénzzel vagy kártyával fizetek
+      %br
+      %input{ :type => "radio", :name=>"payment", :value => "c" }
+      %label{ :for => "c" } A boltban veszem át, de banki átutalással egyenlítem az összeget
+  %fieldset
+    %legend Speciális kérések
+    .input
+      %label{:for=>"note"}Megjegyzések (pl. kiszállítási időpont)
+      %br
+      %textarea{ :name => "note", :rows => "10", :cols => "40" }
+  .submit
+    %input{ :type => "submit", :value => "Mentés és folytatás" }

@@ -1,0 +1,86 @@
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Új termék hozzáadása</title>
+   <meta name="author" content="" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+<div id="head">
+  <h1> Adminisztráció</h1>
+  <ul>
+    <li><a href="orders.html">Rendelések</a></li>
+    <li><a href="categories.html">Termék kategóriák</a></li>
+    <li><a href="products.html">Termékek</a></li>
+    <li>Felhasználók</li>
+  </ul>
+</div>
+<div id="content">
+  <h2>Új termék hozzáadása</h2>
+<form action='product-new-edit-failed.html'>
+  <fieldset>
+    <div class='input'>
+      <label for='name'>Név</label>
+      <input type='text' />
+    </div>
+    <div class='input'>
+      <label for='category'>Kategória</label>
+      <select name='category'>
+        <option>Könyvek</option>
+        <option>-Albumok</option>
+        <option>-Gasztronómia</option>
+        <option>-Ismeretterjesztő könyvek</option>
+        <option>-Idegennyelvű könyvek</option>
+        <option>--Angol</option>
+        <option>--Német</option>
+        <option>--Orosz</option>
+        <option>-Regények</option>
+        <option>-Sport</option>
+        <option>-Számítástechnika</option>
+        <option>-Történelem</option>
+        <option>Zenék</option>
+        <option>Filmek</option>
+        <option>-Akció</option>
+        <option>-Dráma</option>
+        <option>-Vígjáték</option>
+        <option>-Sport</option>
+        <option>Szórakoztató-elektronika</option>
+        <option>Játék</option>
+        <option>Ajándéktárgyak</option>
+        <option>Ruhák</option>
+        <option>Szoftver-hardver</option>
+      </select>
+    </div>
+    <div class='input'>
+      <label for='price'>Ár</label>
+      <input type='text' />
+    </div>
+    <div class='input'>
+      <label for='description'>Leírás</label>
+      <textarea cols='60' rows='20'></textarea>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Termék jellemzők</legend>
+    <div class='input'>
+      <label for='szerzo'>Szerző</label>
+      <input type='text' />
+    </div>
+    <div class='input'>
+      <label for='szerzo'>Kiadási év</label>
+      <input type='text' />
+    </div>
+    <div class='input'>
+      <label for='szerzo'>ISBN-szám</label>
+      <input type='text' />
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Kapcsolódó képek</legend>
+  </fieldset>
+  <input type='submit' value='Mentés' />
+</form>
+
+</div>

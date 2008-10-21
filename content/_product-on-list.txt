@@ -1,0 +1,15 @@
+---
+filter: 
+  - erb
+  - haml
+---
+.product  
+  %h3= product[:name]
+  %img{:src=>product[:image_url], :height=>"150", :width => "150"}
+  .details
+    %p.price
+      ="#{product[:price] / 1000 },#{product[:price] % 1000 }"
+      %span.currency Ft
+  .commands
+    %a{ :href=>"product-details.html"} Megnézem
+    %a{ :href=>"show-cart.html" } Kosárba vele!

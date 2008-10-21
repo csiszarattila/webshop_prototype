@@ -1,0 +1,29 @@
+---
+title:      Termék kategória lista
+created_at: 2008-10-12 17:40:52.012667 +02:00
+filter:
+  - erb
+  - haml
+---
+
+-@products = [ create_product("Miss Marple At Bertrams Hotel",1245,"images/marple_book.jpg"), create_product("Why's (poignant) guide to ruby(angol)",2566,"images/book_why.jpg"), create_product("Agile Web Development with Rails(angol)",6555,"images/book_rails.jpg")]
+
+-@products.sort!{ |p,o| p[:name] <=> o[:name] }
+
+%table.products
+  %thead
+    %tr    
+      %th Név
+      %th Ár
+  -for product in @products
+    %tbody.product
+      %tr.details
+        %td
+          %img{:src=>product[:image_url], :height=>"150", :width => "150"}
+          %h3.title= product[:name]
+          .description= product[:description]
+        %td.price= "#{product[:price] / 1000 },#{product[:price] % 1000}<span class='currency'>Ft</span>"
+      %tr.commands
+        %td{:colspan=>"2"}
+          %a{ :href=>"product-details.html"} Megnézem!
+          %a{ :href=>"show-cart.html" } Kosárba vele!

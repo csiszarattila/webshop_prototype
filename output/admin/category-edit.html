@@ -1,0 +1,91 @@
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Kategória szerkesztése</title>
+   <meta name="author" content="" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+<div id="head">
+  <h1> Adminisztráció</h1>
+  <ul>
+    <li><a href="orders.html">Rendelések</a></li>
+    <li><a href="categories.html">Termék kategóriák</a></li>
+    <li><a href="products.html">Termékek</a></li>
+    <li>Felhasználók</li>
+  </ul>
+</div>
+<div id="content">
+  <h2>Kategóriák</h2>
+<h2>Könyvek kategória</h2>
+<form>
+  <fieldset>
+    <div class='input'>
+      <label for='name'>Elnevezés</label>
+      <input type='text' value='Könyvek' />
+    </div>
+    <div class='input'>
+      <label for='parent_id'>Szülőkategória</label>
+      <select name='parent_id'>
+        <option>Főkategóriák</option>
+        <option>Könyvek</option>
+        <option>-Albumok</option>
+        <option>-Gasztronómia</option>
+        <option>-Ismeretterjesztő könyvek</option>
+        <option>-Idegennyelvű könyvek</option>
+        <option>--Angol</option>
+        <option>--Német</option>
+        <option>--Orosz</option>
+        <option>-Regények</option>
+        <option>-Sport</option>
+        <option>-Számítástechnika</option>
+        <option>-Történelem</option>
+        <option>Zenék</option>
+        <option>Filmek</option>
+        <option>-Akció</option>
+        <option>-Dráma</option>
+        <option>-Vígjáték</option>
+        <option>-Sport</option>
+        <option>Szórakoztató-elektronika</option>
+        <option>Játék</option>
+        <option>Ajándéktárgyak</option>
+        <option>Ruhák</option>
+        <option>Szoftver-hardver</option>
+      </select>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>A kategóriához kapcsolódó termék jellemzők</legend>
+    <p>A kategóriához kapcsolódó jellemzők lefelé is öröklődnek</p>
+    <div class='category-attribute'>
+      <span>Szerző</span>
+      <a href=''>Szerkeszt</a>
+      <a href=''>Töröl</a>
+    </div>
+    <div class='category-attribute'>
+      <span>Kiadási év</span>
+      <a href=''>Szerkeszt</a>
+      <a href=''>Töröl</a>
+    </div>
+    <div class='category-attribute'>
+      <span>Szerző</span>
+      <a href=''>Szerkeszt</a>
+      <a href=''>Töröl</a>
+    </div>
+    <div class='category-attribute'>
+      <span>ISBN</span>
+      <a href=''>Szerkeszt</a>
+      <a href=''>Töröl</a>
+    </div>
+    <div class='category-attribute'>
+      <span>Kötés</span>
+      <a href=''>Szerkeszt</a>
+      <a href=''>Töröl</a>
+    </div>
+    <a href=''>Jellemző hozzáadása</a>
+  </fieldset>
+</form>
+
+</div>

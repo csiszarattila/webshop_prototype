@@ -1,0 +1,12 @@
+---
+filter: erb
+---
+.product
+  %h3= product.name
+  %img{:src=>product.image_url, :height=>"150", :width => "150"}
+  .details
+    %p.price
+      ár: 
+      %span= "#{product}Ft"
+  .commands
+    %a{ :href=>"show-cart.html" } Kosárba vele!

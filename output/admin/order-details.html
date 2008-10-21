@@ -1,0 +1,99 @@
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Order-Details</title>
+   <meta name="author" content="" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+<div id="head">
+  <h1> Adminisztráció</h1>
+  <ul>
+    <li><a href="orders.html">Rendelések</a></li>
+    <li><a href="categories.html">Termék kategóriák</a></li>
+    <li><a href="products.html">Termékek</a></li>
+    <li>Felhasználók</li>
+  </ul>
+</div>
+<div id="content">
+  <h2>Megrendelések - #212245 számú rendelés</h2>
+<div class='order'>
+  <form>
+    <label for='m'>A rendelés státusza:</label>
+    <select name='m'>
+      <option value='uj'>Új</option>
+      <option value='fuggo'>Függő</option>
+      <option value='teljesitve'>Teljesítve</option>
+    </select>
+    <input type='submit' value='Jelöld' />
+  </form>
+  <h3>A vevő adatai</h3>
+  <div class='buyers'></div>
+  <table>
+    <tr>
+      <th>Név</th>
+      <td>Csiszár Attila</td>
+    </tr>
+    <tr>
+      <th>Irányítószám</th>
+      <td>5200</td>
+    </tr>
+    <tr>
+      <th>Lakhely</th>
+      <td>Törökszentmiklós</td>
+    </tr>
+    <tr>
+      <th>Utca, házszám</th>
+      <td>Batthyány út 99.</td>
+    </tr>
+    <tr>
+      <th>E-mail</th>
+      <td>csiszar.ati@gmail.com</td>
+    </tr>
+  </table>
+  <h3>Rendelési tételek</h3>
+  <table>
+    <tr>
+      <th>Név</th>
+      <th>Darabszám</th>
+      <th>Érték</th>
+    </tr>
+    <tr>
+      <td>Miss Marple At Bertrams hotel</td>
+      <td>1</td>
+      <td>1 x 1024 Ft</td>
+    </tr>
+    <tr>
+      <td>Whys poignant guide to Ruby</td>
+      <td>2</td>
+      <td>2 x 2546 Ft</td>
+    </tr>
+    <tr class='summary'>
+      <th colspan='2'>Összesen</th>
+      <td>10.545 Ft</td>
+    </tr>
+    <tr>
+      <th colspan='2'>Fizetési mód</th>
+      <td>Készpénz</td>
+    </tr>
+  </table>
+  <h3>A vevő megjegyzései</h3>
+  <p>Napközben elérhető vagyok 8-12h-ig.</p>
+  <h3>Saját megjegyzések</h3>
+  <form>
+    <textarea cols='100' rows='10'></textarea>
+    <br />
+    <input type='submit' value='mentés' />
+  </form>
+</div>
+<div class='navigation'>
+  <a class='first' href=''>Első</a>
+  <a href=''>1</a>
+  <a href=''>2</a>
+  <span class='current'>3</span>
+  <a class='last' href=''>Utolsó</a>
+</div>
+
+</div>

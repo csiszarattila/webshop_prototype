@@ -1,0 +1,83 @@
+---
+title:      Categories
+created_at: 2008-10-13 17:50:51.953116 +02:00
+layout: admin
+filter:
+  - erb
+  - haml
+---
+%h2 Kategóriák
+%a{:href=>"category-new.html"} Új kategória
+%ul#categories
+  %li 
+    Könyvek
+    %a{:href=>"category-edit.html"} Szerkeszt
+    %a{:href=>"product-category.html"} Törlés
+    %ul
+      %li 
+        Albumok
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li 
+        Gasztronómia
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li 
+        Ismeretterjesztő könyvek
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li
+        Idegennyelvű könyvek
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+        %ul
+          %li
+            angol
+            %a{:href=>"category-edit.html"} Szerkeszt
+            %a{:href=>"product-category.html"} Törlés
+          %li
+            német
+            %a{:href=>"category-edit.html"} Szerkeszt
+            %a{:href=>"product-category.html"} Törlés
+          %li
+            orosz
+            %a{:href=>"category-edit.html"} Szerkeszt
+            %a{:href=>"product-category.html"} Törlés
+      %li
+        Regények
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li
+        Sport
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li
+        Számítástechnika
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li 
+        Történelem
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+  %li Zenék
+  %li 
+    Filmek
+    %a{:href=>"category-edit.html"} Szerkeszt
+    %a{:href=>"product-category.html"} Törlés
+    %ul
+      %li
+        Dráma
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li 
+        Akció
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés
+      %li
+        Vígjáték
+        %a{:href=>"category-edit.html"} Szerkeszt
+        %a{:href=>"product-category.html"} Törlés      
+  %li Szórakoztató-elektronika
+  %li Játék
+  %li Ajándéktárgyak
+  %li Szoftver-hardver

@@ -1,0 +1,55 @@
+---
+title:      Termék részletes megjelenítése
+created_at: 2008-10-13 08:28:01.708096 +02:00
+filter:
+  - erb
+  - haml
+---
+#product-details
+  %h2 Why's (poignant) guide to ruby(angol)
+  #imagecolumn
+    %img.main-picture{:src=>"images/book_why.jpg", :height=>"150", :width => "150"}
+    .price 
+      4,560 
+      %span.currency Ft
+    .commands
+      %a{ :href=>"show-cart.html" } Kosárba vele!
+  #detailscolumn
+    .details Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+    .attributes
+      %h3 A termék jellemzői
+      %table
+        %tr
+          %th Szerző
+          %td Why
+          %th Kiadási év
+          %td 2007
+        %tr
+          %th Oldalszám
+          %td 205
+          %th ISBN-szám
+          %td 122-1233456789
+    .images
+      %h3 További képek a termékről
+      %img{:src=>"images/book_why.jpg", :height=>"150", :width => "150"}
+      %img{:src=>"images/book_why.jpg", :height=>"150", :width => "150"}
+    .tags
+      %h3 Keresés a hasonló címkéjű termékek között
+      %span 
+        %a{:href=>""} angol nyelvű könyvek
+      %span 
+        %a{:href=>""} számítástechnika
+      %span 
+        %a{:href=>""} Why
+      %span 
+        %a{:href=>""} Ruby on Rails
+      %span 
+        %a{:href=>""} Ruby 
+
+#related-products
+  %h2 Kapcsolódó termékek
+  -@products = [ create_product("Miss Marple At Bertrams Hotel",1245,"images/marple_book.jpg"), create_product("Why's (poignant) guide to ruby(angol)",2566,"images/book_why.jpg"), create_product("Agile Web Development with Rails(angol)",6555,"images/book_rails.jpg")]
+  -for product in @products
+    =render :partial => "product-on-list", :locals=>{:product=>product}
+  
