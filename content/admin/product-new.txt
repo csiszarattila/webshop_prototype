@@ -55,6 +55,7 @@ filter:
     .input
       %label{ :for => "szerzo" } ISBN-szám
       %input{ :type => "text" }
-  %fieldset
-    %legend Kapcsolódó képek
+  %fieldset#new-picture 
+    %legend Kép feltöltése
+    %input{:type=>"file",:name=>"new_picture"}
   %input{ :type => "submit", :value => "Mentés"}

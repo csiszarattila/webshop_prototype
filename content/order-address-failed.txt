@@ -10,7 +10,7 @@ filter:
   
 %form#order-address{ :action => "order-review.html" }
   .error-messages
-    %h4 Az adataid mentése a következő oko miatt nem sikerült
+    %h4 Az adataid mentése a következő okok miatt nem sikerült
     %p Ilyen nevű település nem létezik
     %p Hibás irányítószám
     %p Nem választottál szállítási módot
@@ -34,6 +34,16 @@ filter:
       %label{ :for => "street"} Utca, házszám
       %br
       %input{ :type => "text", :name=>"street", :value=>"Batthyány út 99. 1lh. 4/13" }
+  %fieldset
+    %legend Elérhetőségek
+    .input 
+      %label{ :for => "email"} Email cím
+      %br
+      %input{ :type => "text", :name => "email", :value=>"csiszar.ati@gmail.com"}
+    .input
+      %label{ :for => "tel"} Telefonszám
+      %br
+      %input{ :type =>"text", :name => "tel", :value => "06302121212" }
   %fieldset
     %legend.as-label.as-label-with-error Fizetési és szállítási mód
     .radio-group.radio-group-with-error

@@ -185,6 +185,15 @@ table#index-cart{
  margin-top:3em;
 }
 
+form#sort{
+ border-bottom:1px solid #bbb;
+ text-align:right;
+ padding:0.4em 1em;
+}
+form#sort label{
+ font-weight:bold;
+}
+
 div.products{
  overflow:hidden;
  padding:0px;
@@ -243,7 +252,6 @@ table.products .product .details td{
  font-size:.5em;
  color:#c00;
 }
-
 
 .product .commands,
 #product-details .commands,
@@ -392,13 +400,6 @@ form.login-or-registration{
  min-height:2.6em;
 }
 
-form.login-or-registration h4.error{
- background:#c00;
- color:#fff;
- padding:0.2em;
- width:21em;
-}
-
 form .input,
 form .submit input{
  margin-top:1em;
@@ -418,6 +419,7 @@ form .input textarea,
 form .radio-group{
  border:2px solid #0c0;
  font-size:1.2em;
+ margin:0px;
 }
 
 form .radio-group {

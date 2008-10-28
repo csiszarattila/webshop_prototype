@@ -10,11 +10,13 @@ filter:
 
 -@products.sort!{ |p,o| p[:name] <=> o[:name] }
 
+%form#sort
+  %select{:name => "sort_by"}
+    %option{:name=>"name"} Név szerint 
+    %option{:name=>"price"} Ár szerint
+  %input#submit{:type=> "submit", :value=>"Rendezd"}
+
 %table.products
-  %thead
-    %tr    
-      %th Név
-      %th Ár
   -for product in @products
     %tbody.product
       %tr.details

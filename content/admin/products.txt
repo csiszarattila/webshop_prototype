@@ -40,46 +40,46 @@ filter:
 %table{:class=>"products list"}
   %tr
     %td
-      %img{ :src=> "/images/bob.jpg", :height => "50", :width => "50" }
+      %img{ :src=> "../images/bob.jpg", :height => "50", :width => "50" }
     %td
       %h3 Band of Brothers DVD
     %td
-      %a{ :href => "show-cart.html" } Mutasd
+      %a{ :href => "../product-details.html" } Mutasd
       %a{ :href => "product-edit.html"} Szerkeszt
       %a Törlés
   %tr
     %td
-      %img{:src=>"/images/lego.jpg", :height=>"50", :width => "50"}
+      %img{:src=>"../images/lego.jpg", :height=>"50", :width => "50"}
     %td
       %h3 Lego készlet
     %td
-      %a{ :href => "show-cart.html" } Mutasd
+      %a{ :href => "../product-details.html" } Mutasd
       %a{ :href => "product-edit.html"} Szerkeszt
       %a Törlés
   %tr
     %td
-      %img{:src=>"/images/marple_book.jpg", :height=>"50", :width => "50"}
+      %img{:src=>"../images/marple_book.jpg", :height=>"50", :width => "50"}
     %td
       %h3 Miss Marple At Bertrams Hotel
     %td
-      %a{ :href => "show-cart.html" } Mutasd
+      %a{ :href => "../product-details.html" } Mutasd
       %a{ :href => "product-edit.html"} Szerkeszt
       %a Törlés
   %tr
     %td
-      %img{:src=>"/images/sony_tv.jpg", :height=>"50", :width => "50"}
+      %img{:src=>"../images/sony_tv.jpg", :height=>"50", :width => "50"}
     %td
       %h3 Sony Bravo 60" LCD TV
     %td
-      %a{ :href => "show-cart.html" } Mutasd
+      %a{ :href => "../product-details.html" } Mutasd
       %a{ :href => "product-edit.html"} Szerkeszt
       %a Törlés
   %tr
     %td
-      %img{:src=>"/images/book_why.jpg", :height=>"50", :width => "50"}
+      %img{:src=>"../images/book_why.jpg", :height=>"50", :width => "50"}
     %td
       %h3 Why's (poignant) guide to Ruby
     %td
-      %a{ :href => "show-cart.html" } Mutasd
+      %a{ :href => "../product-details.html" } Mutasd
       %a{ :href => "product-edit.html"} Szerkeszt
       %a Törlés

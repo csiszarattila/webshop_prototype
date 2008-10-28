@@ -56,18 +56,24 @@ filter:
         %input{ :type => "text", :value => "2007" }
       .input
         %label{ :for => "szerzo" } ISBN-szám
-        %input{ :type => "text", :value => "122345-123456789" } 
+        %input{ :type => "text", :value => "122345-123456789" }
+    %fieldset#new-picture 
+      %legend Új kép csatolása
+      %input{:type=>"file",:name=>"new_picture"}
   #right-column
     %fieldset#pictures
       %legend Kapcsolódó képek
       .picture
-        %img{ :src => "/images/book_why.jpg", :width=>"150", :height=>"150" }
-        %a Törlés
+        %img{ :src => "../images/book_why.jpg", :width=>"150", :height=>"150" }
+        %a{:href=>""} Szerkeszt
+        %a{:href=>""} Törlés
       .picture
-        %img{ :src => "/images/book_rails.jpg", :width=>"150", :height=>"150" }
-        %a Törlés
+        %img{ :src => "../images/book_rails.jpg", :width=>"150", :height=>"150" }
+        %a{:href=>""} Szerkeszt
+        %a{:href=>""} Törlés
       .picture
-        %img{ :src => "/images/vs.jpg", :width=>"150", :height=>"150" }
-        %a Törlés
+        %img{ :src => "../images/vs.jpg", :width=>"150", :height=>"150" }
+        %a{:href=>""} Szerkeszt
+        %a{:href=>""} Törlés
   #submit
     %input{ :type => "submit", :value => "Mentés"}

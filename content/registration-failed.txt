@@ -8,7 +8,7 @@ filter:
 .order-step-info
   %h2 1 / 3 lépés : Regisztráció vagy Belépés | Sikertelen regisztráció
   
-%form{ :action => "/order-address.html" }
+%form{ :action => "order-address.html" }
   .error-messages
     %h4 A regisztráció a következők miatt nem sikerült
     %p A felhasználónév már foglalt

@@ -16,7 +16,7 @@ filter:
   <div id="head">
     <h1><a href="index.html">Webshop</a></h1>
     <ul>
-      <li class="user"><a href="login-or-registration.html">Bejelentkezés vagy regisztráció</a></li>
+      <li class="user"><a href="login-or-registration.html">Bejelentkezés vagy Regisztráció</a></li>
       <li class="info"><a href="">Vásárlási információk</a></li>
       <li class="about"><a href="">A boltról</a></li>
     </ul>

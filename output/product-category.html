@@ -11,7 +11,7 @@
   <div id="head">
     <h1><a href="index.html">Webshop</a></h1>
     <ul>
-      <li class="user"><a href="login-or-registration.html">Bejelentkezés vagy regisztráció</a></li>
+      <li class="user"><a href="login-or-registration.html">Bejelentkezés vagy Regisztráció</a></li>
       <li class="info"><a href="">Vásárlási információk</a></li>
       <li class="about"><a href="">A boltról</a></li>
     </ul>
@@ -57,13 +57,14 @@
       </ul>
     </div>
     <div id="middlecolumn">
-      <table class='products'>
-  <thead>
-    <tr>
-      <th>Név</th>
-      <th>Ár</th>
-    </tr>
-  </thead>
+      <form id='sort'>
+  <select name='sort_by'>
+    <option name='name'>Név szerint</option>
+    <option name='price'>Ár szerint</option>
+  </select>
+  <input id='submit' type='submit' value='Rendezd' />
+</form>
+<table class='products'>
   <tbody class='product'>
     <tr class='details'>
       <td>

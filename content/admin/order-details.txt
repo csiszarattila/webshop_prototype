@@ -34,6 +34,9 @@ filter:
     %tr
       %th E-mail
       %td csiszar.ati@gmail.com
+    %tr
+      %th Telefonszám
+      %td 06/30-212-2122
   %h3 Rendelési tételek
   %table
     %tr
